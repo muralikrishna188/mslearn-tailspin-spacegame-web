@@ -1,0 +1,4 @@
+Could you please swap the IP address for vjiraspr01 and vjiraspr01rh8?
+vjiraspr01
+10.78.131.61
+hostnamectl set-hostname vjiraspr01

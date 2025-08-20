@@ -1,7 +1,8 @@
 on:
   push:
     branches:
-      - master 
+      - master
+
 jobs:
   print_hello:       
     runs-on: ubuntu-latest

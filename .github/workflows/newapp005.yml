@@ -1,0 +1,9 @@
+on:
+  push: 
+    branches:
+        - master   
+jobs:
+  print_helo:
+    runs-on: ubuntu-latest  
+    steps:
+        - run: echo "DevSecOps is awesome!"          

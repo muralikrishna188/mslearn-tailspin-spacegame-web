@@ -1,14 +1,15 @@
 stages:
-  - stage: buildstage 
-    jobs:
-      - job: buildjob 
-        steps:
-          - script: dotnet restore 
-          - script: dotnet build 
-          - script: dotnet publish
-
-
-
-
-
-
+- stage: buildstage
+  displayName: flipkart-dev-buildjob
+  jobs:
+    - job: buildstage 
+      displayName: flipkart-dev-buildstage
+      steps:
+        - script: dotnet restore
+          displayName: flipkart-dev-dotnet restore
+        - script: dotnet build
+          displayName: flipkart-dev-dotnet build  
+        - script: dotnet test 
+          displayName: flipkart-dev-dotnet test
+        - script: dotnet publish
+          displayName: flipkart-dev-dotnet publish
